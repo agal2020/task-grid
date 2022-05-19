@@ -3,4 +3,26 @@ body,
 #root {
     height: 100%;
     margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    width: 700px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: auto 200px auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        'post-1 post-1'
+        'post-1 post-1'
+        'post-1';
+    gap: 20px;
+}
+
+div {
+    background-color: #daa520;
+}
+
+.post-1 {
+    grid-area: post-1;
 }
